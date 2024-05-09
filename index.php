@@ -16,7 +16,7 @@
                 <div class="col-lg-12 d-flex justify-content-between align-items-center">
                     <h4>Listar Clientes e Produtos </h4>
                     <div>
-                        <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal"
+                        <button type="button" class="btn btn-outline-success btn-sm" data-bs-toggle="modal"
                             data-bs-target="#cadClienteModal">Cadastrar</button>
                     </div>
                 </div>
@@ -95,8 +95,11 @@
                                     <input type="text" name="qtd_e" class="form-control" id="qtd_e"
                                         placeholder="Quantidade Estoque" required>
                                 </div>
-                            </form>
 
+                                <div class="col-12">
+                                    <input type="submit" class="btn btn-outline-success btn-sm" value="Cadastrar">
+                                </div>
+                            </form>
                         </div>
 
                         <div class="modal-footer">
