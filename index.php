@@ -64,26 +64,26 @@
                                 </div>
 
                                 <div class="col-12">
-                                    <label for="codigo_p" class="form-label">Codigo Produto</label>
-                                    <input type="number" name="codigo_p" class="form-control" id="codigo_p"
+                                    <label for="codigo_produto" class="form-label">Codigo Produto</label>
+                                    <input type="number" name="codigo_produto" class="form-control" id="codigo_produto"
                                         placeholder="Código Produto">
                                 </div>
 
                                 <div class="col-12">
-                                    <label for="nome_p" class="form-label">Nome Produto</label>
-                                    <input type="text" name="nome_p" class="form-control" id="nome_p"
+                                    <label for="nome_produto" class="form-label">Nome Produto</label>
+                                    <input type="text" name="nome_produto" class="form-control" id="nome_produto"
                                         placeholder="Nome Produto">
                                 </div>
 
                                 <div class="col-12">
-                                    <label for="valor_p" class="form-label">Valor Produto</label>
-                                    <input type="text" name="valor_p" class="form-control" id="valor_p"
+                                    <label for="valor_produto" class="form-label">Valor Produto</label>
+                                    <input type="text" name="valor_produto" class="form-control" id="valor_produto"
                                         placeholder="Valor Produto">
                                 </div>
 
                                 <div class="col-12">
-                                    <label for="qtd_e" class="form-label">Quantidade Estoque</label>
-                                    <input type="text" name="qtd_e" class="form-control" id="qtd_e"
+                                    <label for="qtd_estoque" class="form-label">Quantidade Estoque</label>
+                                    <input type="text" name="qtd_estoque" class="form-control" id="qtd_estoque"
                                         placeholder="Quantidade Estoque">
                                 </div>
 
