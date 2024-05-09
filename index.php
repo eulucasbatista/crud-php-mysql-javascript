@@ -97,7 +97,8 @@
                                 </div>
 
                                 <div class="col-12">
-                                    <input type="submit" class="btn btn-outline-success btn-sm" value="Cadastrar">
+                                    <input type="submit" class="btn btn-outline-success btn-sm" id="cad-cliente"
+                                        value="Cadastrar">
                                 </div>
                             </form>
                         </div>
