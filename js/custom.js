@@ -15,3 +15,24 @@ const listarClientes = async (pagina) => {
 }
 
 listarClientes(1);
+
+// Cadastrar registros em duas tabelas
+
+const cadClienteForm = document.getElementById("cad-cliente-form")
+
+// somente acessa o if quando existir o SELETOR "cad-usuario-for"
+if (cadClienteForm) {
+    cadClienteForm.addEventListener("submit", async (e) => {
+        // nao permitir a atualização da pagina
+        e.preventDefault();
+
+        console.log("Acessou a funcao cadastrar!");
+        /*  const dadosForm = new FormData(cadClienteForm);
+  
+          await fetch("cadastrar.php", {
+              method: "POST",
+              body: dadosForm
+          }); */
+    })
+}
+
