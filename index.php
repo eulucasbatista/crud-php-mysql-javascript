@@ -97,25 +97,20 @@
                                 </div>
 
                                 <div class="col-12">
-                                    <input type="submit" class="btn btn-outline-success btn-sm" id="cad-cliente"
+                                    <input type="submit" class="btn btn-outline-success btn-sm" id="cad-cliente-btn"
                                         value="Cadastrar">
                                 </div>
                             </form>
                         </div>
-
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
-                        </div>
                     </div>
                 </div>
+                <!-- Fim Modal cadastar Cliente -->
             </div>
-            <!-- Fim Modal cadastar Cliente -->
-        </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-        </script>
-        <script src="js/custom.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+                crossorigin="anonymous">
+            </script>
+            <script src="js/custom.js"></script>
 
     </body>
 </div>
