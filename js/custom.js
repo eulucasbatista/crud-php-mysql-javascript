@@ -26,13 +26,15 @@ if (cadClienteForm) {
         // nao permitir a atualização da pagina
         e.preventDefault();
 
-        console.log("Acessou a funcao cadastrar!");
-        /*  const dadosForm = new FormData(cadClienteForm);
-  
-          await fetch("cadastrar.php", {
-              method: "POST",
-              body: dadosForm
-          }); */
-    })
-}
+        // console.log("Acessou a funcao cadastrar!");
+        const dadosForm = new FormData(cadClienteForm);
 
+        const dados = await fetch("cadastrar.php", {
+            method: "POST",
+            body: dadosForm
+        });
+        const resposta = await dados.json();
+
+        console.log(resposta);
+    })
+} 

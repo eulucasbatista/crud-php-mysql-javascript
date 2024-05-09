@@ -43,57 +43,48 @@
                             <form class="row g-3" id="cad-cliente-form">
                                 <div class="col-12">
                                     <label for="nome" class="form-label">Nome</label>
-                                    <input type="text" name="nome" class="form-control" id="nome" placeholder="Nome"
-                                        required>
+                                    <input type="text" name="nome" class="form-control" id="nome" placeholder="Nome">
                                 </div>
-                            </form>
-                            <form class="row g-3" id="cad-cliente-form">
+
                                 <div class="col-12">
                                     <label for="sobrenome" class="form-label">Sobrenome</label>
                                     <input type="text" name="sobrenome" class="form-control" id="sobrenome"
-                                        placeholder="Sobrenome" required>
+                                        placeholder="Sobrenome">
                                 </div>
-                            </form>
-                            <form class="row g-3" id="cad-cliente-form">
+
                                 <div class="col-12">
                                     <label for="email" class="form-label">Email</label>
-                                    <input type="email" name="email" class="form-control" id="email" placeholder="Email"
-                                        required>
+                                    <input type="email" name="email" class="form-control" id="email"
+                                        placeholder="Email">
                                 </div>
-                            </form>
-                            <form class="row g-3" id="cad-cliente-form">
+
                                 <div class="col-12">
                                     <label for="cpf" class="form-label">CPF</label>
-                                    <input type="text" name="cpf" class="form-control" id="cpf" placeholder="CPF"
-                                        required>
+                                    <input type="text" name="cpf" class="form-control" id="cpf" placeholder="CPF">
                                 </div>
-                            </form>
-                            <form class="row g-3" id="cad-cliente-form">
+
                                 <div class="col-12">
                                     <label for="codigo_p" class="form-label">Codigo Produto</label>
                                     <input type="number" name="codigo_p" class="form-control" id="codigo_p"
-                                        placeholder="Código Produto" required>
+                                        placeholder="Código Produto">
                                 </div>
-                            </form>
-                            <form class="row g-3" id="cad-cliente-form">
+
                                 <div class="col-12">
                                     <label for="nome_p" class="form-label">Nome Produto</label>
                                     <input type="text" name="nome_p" class="form-control" id="nome_p"
-                                        placeholder="Nome Produto" required>
+                                        placeholder="Nome Produto">
                                 </div>
-                            </form>
-                            <form class="row g-3" id="cad-cliente-form">
+
                                 <div class="col-12">
                                     <label for="valor_p" class="form-label">Valor Produto</label>
                                     <input type="text" name="valor_p" class="form-control" id="valor_p"
-                                        placeholder="Valor Produto" required>
+                                        placeholder="Valor Produto">
                                 </div>
-                            </form>
-                            <form class="row g-3" id="cad-cliente-form">
+
                                 <div class="col-12">
                                     <label for="qtd_e" class="form-label">Quantidade Estoque</label>
                                     <input type="text" name="qtd_e" class="form-control" id="qtd_e"
-                                        placeholder="Quantidade Estoque" required>
+                                        placeholder="Quantidade Estoque">
                                 </div>
 
                                 <div class="col-12">
