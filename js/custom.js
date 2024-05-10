@@ -43,6 +43,7 @@ if (cadClienteForm) {
         if (!resposta['status']) {
             document.getElementById("msgAlertaErro").innerHTML = resposta['msg'];
         } else {
+            document.getElementById("msgAlertaErro").innerHTML = "";
             document.getElementById("msgAlerta").innerHTML = resposta['msg'];
             cadClienteForm.reset();
             cadClienteMadal.hide();
