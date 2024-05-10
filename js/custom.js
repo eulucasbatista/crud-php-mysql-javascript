@@ -31,7 +31,7 @@ if (cadClienteForm) {
         // console.log("Acessou a funcao cadastrar!");
         const dadosForm = new FormData(cadClienteForm);
 
-        document.getElementById("cad-cliente-btn").value
+        document.getElementById("cad-cliente-btn").value = "Salvando"
 
         const dados = await fetch("cadastrar.php", {
             method: "POST",
