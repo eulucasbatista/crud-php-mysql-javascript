@@ -11,7 +11,6 @@ const listarClientes = async (pagina) => {
             conteudo.innerHTML = resposta['dados'];
         }
     }
-
 }
 
 listarClientes(1);
@@ -21,7 +20,7 @@ listarClientes(1);
 const cadClienteForm = document.getElementById("cad-cliente-form")
 
 // Receber o SELETOR da janela modal
-const cadClienteModal = new bootstrap.Modal(document.getElementById("cadClienteModa"));
+const cadClienteMadal = new bootstrap.Modal(document.getElementById("cadClienteModal"));
 
 // somente acessa o if quando existir o SELETOR "cad-usuario-for"
 if (cadClienteForm) {
@@ -32,12 +31,13 @@ if (cadClienteForm) {
         // console.log("Acessou a funcao cadastrar!");
         const dadosForm = new FormData(cadClienteForm);
 
+        document.getElementById("cad-cliente-btn").value
+
         const dados = await fetch("cadastrar.php", {
             method: "POST",
             body: dadosForm
         });
         const resposta = await dados.json();
-        console.log(resposta);
 
         // Acessa o IF quando nao cadastrar com sucesso
         if (!resposta['status']) {
@@ -45,7 +45,8 @@ if (cadClienteForm) {
         } else {
             document.getElementById("msgAlerta").innerHTML = resposta['msg'];
             cadClienteForm.reset();
-            cadClienteModal.hide();
+            cadClienteMadal.hide();
+            listarClientes(1);
         }
     })
 } 

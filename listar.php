@@ -18,7 +18,7 @@ $query_clientes = "SELECT clientes.id, clientes.nome AS cliente_nome, clientes.s
                     produtos.codigo_produto, produtos.nome_produto, produtos.valor_produto, produtos.qtd_estoque
                     FROM clientes
                     LEFT JOIN produtos ON produtos.clientes_id = clientes.id
-                    ORDER BY clientes.id ASC
+                    ORDER BY clientes.id DESC
                     LIMIT $inicio,  $qnt_result_pg";
 $result_clientes = $conn->prepare($query_clientes);
 $result_clientes->execute();
