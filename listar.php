@@ -52,7 +52,7 @@ if (($result_clientes)and ($result_clientes->rowCount() !=0)) {
         $dados .="<td>$nome_produto</td>";
         $dados .="<td>$valor_produto</td>";
         $dados .="<td>$qtd_estoque</td>";
-        $dados .="<td>Visualizar Editar Apagar</td>";
+        $dados .="<td><a href='#' class='btn-outline-primary btn-sm' onclick='visCliente' Visualizar Editar Apagar</td>";
         $dados .="</tr>";
     }
     $dados .="</tbody>";

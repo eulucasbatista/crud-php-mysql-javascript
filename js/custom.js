@@ -42,6 +42,7 @@ if (cadClienteForm) {
         // Acessa o IF quando nao cadastrar com sucesso
         if (!resposta['status']) {
             document.getElementById("msgAlertaErro").innerHTML = resposta['msg'];
+            document.getElementById("msgAlerta").innerHTML = "";
         } else {
             document.getElementById("msgAlertaErro").innerHTML = "";
             document.getElementById("msgAlerta").innerHTML = resposta['msg'];
