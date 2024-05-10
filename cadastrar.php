@@ -52,7 +52,7 @@ if(empty($dados['nome'])){
 
     // verifica se cadastrou o produto
     if($cad_produto->rowCount()){
-        $retorna = ['status' => false, 'msg' => "<div class='alert-success' role='alert'> Cliente Cadastrado com sucesso </div>", 'id_cliente' => $id_cliente];
+        $retorna = ['status' => true, 'msg' => "<div class='alert alert-success' role='alert'> Cliente Cadastrado com sucesso </div>"];
     }else {
         $retorna = ['status' => false, 'msg' => "<div class='alert-danger' role='alert'> Clinte não cadastrado com sucesso</div>"];
     }

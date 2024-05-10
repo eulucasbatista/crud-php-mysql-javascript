@@ -34,7 +34,13 @@ if (cadClienteForm) {
             body: dadosForm
         });
         const resposta = await dados.json();
-
         console.log(resposta);
+
+        // Acessa o IF quando nao cadastrar com sucesso
+        if (!resposta['status']) {
+            document.getElementById("msgAlerta").innerHTML = resposta['msg'];
+        } else {
+            document.getElementById("msgAlerta").innerHTML = resposta['msg'];
+        }
     })
 } 

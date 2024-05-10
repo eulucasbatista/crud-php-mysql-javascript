@@ -22,7 +22,7 @@
                 </div>
             </div>
 
-            <span id=" msgAlerta"></span>
+            <span id="msgAlerta"></span>
 
             <div class="row">
                 <div class="col-lg-12">
