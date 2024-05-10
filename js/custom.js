@@ -20,6 +20,9 @@ listarClientes(1);
 
 const cadClienteForm = document.getElementById("cad-cliente-form")
 
+// Receber o SELETOR da janela modal
+const cadClienteModal = new bootstrap.Modal(document.getElementById("cadClienteModa"));
+
 // somente acessa o if quando existir o SELETOR "cad-usuario-for"
 if (cadClienteForm) {
     cadClienteForm.addEventListener("submit", async (e) => {
@@ -41,6 +44,8 @@ if (cadClienteForm) {
             document.getElementById("msgAlerta").innerHTML = resposta['msg'];
         } else {
             document.getElementById("msgAlerta").innerHTML = resposta['msg'];
+            cadClienteForm.reset();
+            cadClienteModal.hide();
         }
     })
 } 
