@@ -31,7 +31,7 @@ if (cadClienteForm) {
         // console.log("Acessou a funcao cadastrar!");
         const dadosForm = new FormData(cadClienteForm);
 
-        document.getElementById("cad-cliente-btn").value = "Salvando"
+        document.getElementById("cad-cliente-btn").value = "Salvando...";
 
         const dados = await fetch("cadastrar.php", {
             method: "POST",
@@ -41,12 +41,13 @@ if (cadClienteForm) {
 
         // Acessa o IF quando nao cadastrar com sucesso
         if (!resposta['status']) {
-            document.getElementById("msgAlerta").innerHTML = resposta['msg'];
+            document.getElementById("msgAlertaErro").innerHTML = resposta['msg'];
         } else {
             document.getElementById("msgAlerta").innerHTML = resposta['msg'];
             cadClienteForm.reset();
             cadClienteMadal.hide();
             listarClientes(1);
         }
+        document.getElementById("cad-cliente-btn").value = "Cadastrar";
     })
 } 

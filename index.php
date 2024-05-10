@@ -40,6 +40,7 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
+                            <span id="msgAlertaErro"></span>
                             <form class="row g-3" id="cad-cliente-form">
                                 <div class="col-12">
                                     <label for="nome" class="form-label">Nome</label>

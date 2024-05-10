@@ -9,21 +9,21 @@ $dados = filter_input_array(INPUT_POST, FILTER_DEFAULT);
 
 //Validar o formulario
 if(empty($dados['nome'])){
-    $retorna = ['status' => false, 'msg' => "<div class='alert-danger' role='alert'> Erro: necessário preencher o nome </div>"];
+    $retorna = ['status' => false, 'msg' => "<div class='alert alert-danger' role='alert'> Erro: necessário preencher o campo nome </div>"];
 }else if(empty($dados['sobrenome'])){
-    $retorna = ['status' => false, 'msg' => "<div class='alert-danger' role='alert'> Erro: necessário preencher o sobrenome</div>"];
+    $retorna = ['status' => false, 'msg' => "<div class='alert alert-danger' role='alert'> Erro: necessário preencher o campo sobrenome</div>"];
 }else if(empty($dados['email'])){
-    $retorna = ['status' => false, 'msg' => "<div class='alert-danger' role='alert'> Erro: necessário preencher o email</div>"];
+    $retorna = ['status' => false, 'msg' => "<div class='alert alert-danger' role='alert'> Erro: necessário preencher o campo email</div>"];
 }else if(empty($dados['cpf'])){
-    $retorna = ['status' => false, 'msg' => "<div class='alert-danger' role='alert'> Erro: necessário preencher o cpf</div>"];
+    $retorna = ['status' => false, 'msg' => "<div class='alert alert-danger' role='alert'> Erro: necessário preencher o campo cpf</div>"];
 }else if(empty($dados['codigo_produto'])){
-    $retorna = ['status' => false, 'msg' => "<div class='alert-danger' role='alert'> Erro: necessário preencher o codigo do produto</div>"];
+    $retorna = ['status' => false, 'msg' => "<div class='alert alert-danger' role='alert'> Erro: necessário preencher o campo codigo do produto</div>"];
 }else if(empty($dados['nome_produto'])){
-    $retorna = ['status' => false, 'msg' => "<div class='alert-danger' role='alert'> Erro: necessário preencher o nome do produto</div>"];
+    $retorna = ['status' => false, 'msg' => "<div class='alert alert-danger' role='alert'> Erro: necessário preencher o campo nome do produto</div>"];
 }else if(empty($dados['valor_produto'])){
-    $retorna = ['status' => false, 'msg' => "<div class='alert-danger' role='alert'> Erro: necessário preencher o valor do produto</div>"];
+    $retorna = ['status' => false, 'msg' => "<div class='alert alert-danger' role='alert'> Erro: necessário preencher o campo valor do produto</div>"];
 }else if(empty($dados['qtd_estoque'])){
-    $retorna = ['status' => false, 'msg' => "<div class='alert-danger' role='alert'> Erro: necessário preencher a quantidade do produto</div>"];
+    $retorna = ['status' => false, 'msg' => "<div class='alert alert-danger' role='alert'> Erro: necessário preencher a campo quantidade do produto</div>"];
 }else{
     //Cadastrar no BD na primeira tabela
     $query_cliente = "INSERT INTO clientes (nome, sobrenome, email, cpf) VALUES (:nome, :sobrenome, :email, :cpf)";
