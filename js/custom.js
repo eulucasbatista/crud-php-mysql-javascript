@@ -52,4 +52,10 @@ if (cadClienteForm) {
         }
         document.getElementById("cad-cliente-btn").value = "Cadastrar";
     })
-} 
+}
+
+// Visualizar os dados do registro
+
+async function visCliente(id) {
+    console.log(id);
+}
